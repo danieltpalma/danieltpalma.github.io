@@ -15,7 +15,7 @@ body {
 
 .top {
 	position: fixed;
-	top: 0;
+	top: 1%;
 	right: 25px;
 	width: 100%;
 	/* width: 235px;
@@ -38,7 +38,7 @@ body {
 
 .bottom {
 	position: fixed;
-	bottom: 0%;
+	bottom: 1%;
 	right: 25px;
 	width: 100%;
 	/* width: 235px;
@@ -58,6 +58,32 @@ body {
 	filter: blur(5px);
 }
 
+@-moz-keyframes animate {
+	0% {
+		background: #f58025;
+	}
+
+	50% {
+		background: #0064b1;
+	}
+
+	100% {
+		background: #f58025;
+	}
+}
+@-webkit-keyframes animate {
+	0% {
+		background: #f58025;
+	}
+
+	50% {
+		background: #0064b1;
+	}
+
+	100% {
+		background: #f58025;
+	}
+}
 @keyframes animate {
 	0% {
 		background: #f58025;
