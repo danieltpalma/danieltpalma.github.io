@@ -8,38 +8,66 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
-	background: black;
+	min-height: 198vh;
+	background: #000000;
+	overflow: hidden;
 }
 
-.ball {
-	position: relative;
-	width: 235px;
-	height: 300px;
+.top {
+	position: fixed;
+	top: 0;
+	right: 25px;
+	width: 100%;
+	/* width: 235px;
+	height: 300px; */
 }
 
-.ball span {
-	position: absolute;
-	width: calc(300px + var(--i));
-	height: calc(300px + var(--i));
+.top span {
+	position: fixed;
+	width: 200%;
+	height: 10px;
+	/* width: calc(300px + var(--i));
+	height: calc(300px + var(--i)); */
 	background: var(--clr);
-	border-radius: 50%;
-	transform-origin: calc(100px + var(--i));
-	animation: animate 5s linear infinite;
-	animation-duration: calc(var(--d));
+	animation: animate 10s linear infinite;
+	animation-duration: 10s;
 	mix-blend-mode: plus-lighter;
-	filter: blur(30px);
+	filter: blur(5px);
+	transform: translateY(-10px);
 }
 
-.ball span:nth-child(odd) {
-	animation-direction: reverse;
+.bottom {
+	position: fixed;
+	bottom: 0%;
+	right: 25px;
+	width: 100%;
+	/* width: 235px;
+	height: 300px; */
+}
+
+.bottom span {
+	position: fixed;
+	width: 200%;
+	height: 10px;
+	/* width: calc(300px + var(--i));
+	height: calc(300px + var(--i)); */
+	background: var(--clr);
+	animation: animate 10s linear infinite;
+	animation-duration: 10s;
+	mix-blend-mode: plus-lighter;
+	filter: blur(5px);
 }
 
 @keyframes animate {
 	0% {
-		transform: rotate(0deg);
+		background: #f58025;
 	}
+
+	50% {
+		background: #0064b1;
+	}
+
 	100% {
-		transform: rotate(360deg);
+		background: #f58025;
 	}
 }
