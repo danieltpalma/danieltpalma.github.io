@@ -4,7 +4,19 @@
 	box-sizing: border-box;
 }
 
+.bdy {
+	margin: 0 auto;
+	text-align: center;
+	width: 50%;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
 body {
 	display: flex;
 	background: #61a5ff;
+}
+
+p {
+	color: rgb(255, 255, 255);
 }
