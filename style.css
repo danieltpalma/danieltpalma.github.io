@@ -16,14 +16,13 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100vh;
+	width: 50vh;
 	height: 100vh;
 }
 
 .bdy {
 	display: flex;
-	text-align: center;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
 	row-gap: 1px;
 	padding-top: 2%;
@@ -35,38 +34,41 @@ body {
 	background-color: rgb(92, 139, 184);
 }
 
-.bdy div {
-	width: 50%;
-}
+/* .bdy div {
+	width: 25%;
+} */
 
 .socials_box {
 	display: flex;
-	align-self: start;
-	justify-content: left;
+	width: 50%;
 }
 
 #picture {
 	align-self: center;
 	width: 50%;
-	height: 50%;
 	border: 2px solid rgba(0, 0, 0, 0);
 }
 
 /* consider an other container within bdy for socials to align correctly */
 #socials {
-	align-self: flex-start;
 	display: flex;
 	flex-direction: column;
-	width: 75%;
+	justify-content: space-around;
+	width: 100%;
 	/* flex-wrap: wrap; */
 	border: 2px solid rgba(0, 0, 0, 0);
+}
+
+#socials p {
+	color: rgb(255, 255, 255);
 }
 
 #bio {
 	width: 100%;
 }
 
-p {
+#bio p {
 	color: rgb(225, 225, 225);
+	text-align: center;
 	border: 2px solid rgba(0, 0, 0, 0);
 }
